@@ -6,7 +6,7 @@ using WireMock.ResponseBuilders;
 using WireMock.Server;
 using WireMock.Settings;
 
-namespace MockServer
+namespace WireMockTests.Servers
 {
     public class BeginDecisionMock
     {
@@ -49,7 +49,7 @@ namespace MockServer
             {
                 Message = "Message from response",
                 NoticeType = "ACCEPTED",
-                UserId = Guid.NewGuid().ToString(),
+                UserId = "06e4e0c9-f244-4526-b3fb-01301b9cc4bb",
                 AccountId = 321,
                 DecisionMade = "Declined"
             };
