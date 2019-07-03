@@ -28,6 +28,7 @@ namespace ConsumerApplicationTests.Tests
             var user = GetUserMock.WithHost(host);
 
             user.WithUserId("06e4e0c9-f244-4526-b3fb-01301b9cc4bb");
+            user.WithAccountId(1234);
             user.StartServer();
 
             user.ExpectedResponse.Should().BeEquivalentTo(response);

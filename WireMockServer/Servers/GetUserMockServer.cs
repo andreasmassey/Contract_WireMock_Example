@@ -15,6 +15,7 @@ namespace WireMockServer.Servers
         private readonly Func<string> _getUrl;
         public GetUser.Response ExpectedResponse { get; private set; }
         private string _userId;
+        private int _accountId;
 
         public static GetUserMock WithHost(string host)
         {
@@ -30,6 +31,12 @@ namespace WireMockServer.Servers
         public GetUserMock WithUserId(string userId)
         {
             _userId = userId;
+            return this;
+        }
+
+        public GetUserMock WithAccountId(int accountId)
+        {
+            _accountId = accountId;
             return this;
         }
 
@@ -54,7 +61,8 @@ namespace WireMockServer.Servers
             Server.Given(Request.Create().UsingPost().WithPath(this._getUrl()).WithBody(new JsonMatcher(
                 new
                 {
-                    UserId = _userId
+                    UserId = _userId,
+                    AccountId = _accountId
                 }))).RespondWith(Response.Create().WithBodyAsJson(ExpectedResponse));
             return this;
         }

@@ -5,6 +5,7 @@
         public class Request
         {
             public string UserId { get; set; }
+            public int AccountId { get; set; }
         }
 
         public class Response
