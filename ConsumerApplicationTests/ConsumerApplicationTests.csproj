@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WireMockTest\WireMockServer.csproj" />
+    <ProjectReference Include="..\WireMockServer\WireMockServer.csproj" />
   </ItemGroup>
 
 </Project>
