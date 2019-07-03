@@ -6,7 +6,7 @@ using WireMock.ResponseBuilders;
 using WireMock.Server;
 using WireMock.Settings;
 
-namespace WireMockTests.Servers
+namespace WireMockServer.Servers
 {
     public class BeginDecisionMock
     {

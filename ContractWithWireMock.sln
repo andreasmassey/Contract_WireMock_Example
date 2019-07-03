@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContractWithWireMock", "Con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contract\Contracts.csproj", "{FB80BCCA-D7AC-49DF-AC2D-BC3EE8E00484}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1056953A-568D-4041-90BC-71EB08641157}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WireMockServer", "WireMockServer", "{1056953A-568D-4041-90BC-71EB08641157}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMockTests", "WireMockTest\WireMockTests.csproj", "{FC541E81-27FD-4240-85E6-C5449FFA8FC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMockServer", "WireMockTest\WireMockServer.csproj", "{FC541E81-27FD-4240-85E6-C5449FFA8FC9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsumerApplication", "ConsumerApplication", "{0EBB81FA-3B8D-4BD7-AC32-D9642AFDABE2}"
 EndProject
