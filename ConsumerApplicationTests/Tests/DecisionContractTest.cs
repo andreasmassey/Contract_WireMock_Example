@@ -1,10 +1,10 @@
-﻿using Contracts;
+﻿using FluentAssertions;
 using WireMockTests.Servers;
-using FluentAssertions;
 using Xunit;
+using BeginDecision = ConsumerApplicationTests.Contracts.BeginDecision;
 
 
-namespace WireMockTests.Tests
+namespace ConsumerApplicationTests.Tests
 {
     public class DecisionContractTest
     {

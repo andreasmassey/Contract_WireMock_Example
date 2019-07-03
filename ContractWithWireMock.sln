@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1056953A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMockTests", "WireMockTest\WireMockTests.csproj", "{FC541E81-27FD-4240-85E6-C5449FFA8FC9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsumerApplication", "ConsumerApplication", "{0EBB81FA-3B8D-4BD7-AC32-D9642AFDABE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerApplicationTests", "ConsumerApplicationTests\ConsumerApplicationTests.csproj", "{B0E91832-E3F3-49CB-AA78-600803206515}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,12 +33,17 @@ Global
 		{FC541E81-27FD-4240-85E6-C5449FFA8FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC541E81-27FD-4240-85E6-C5449FFA8FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC541E81-27FD-4240-85E6-C5449FFA8FC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0E91832-E3F3-49CB-AA78-600803206515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E91832-E3F3-49CB-AA78-600803206515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E91832-E3F3-49CB-AA78-600803206515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E91832-E3F3-49CB-AA78-600803206515}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FC541E81-27FD-4240-85E6-C5449FFA8FC9} = {1056953A-568D-4041-90BC-71EB08641157}
+		{B0E91832-E3F3-49CB-AA78-600803206515} = {0EBB81FA-3B8D-4BD7-AC32-D9642AFDABE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B494D8AE-A7DE-41B3-8A07-AA0B08DC50A7}
