@@ -8,6 +8,8 @@ using Microsoft.Extensions.Logging;
 
 namespace ContractWithWireMock.Controllers
 {
+    [Route("api/user")]
+    [ApiController]
     public class UserController : Controller
     {
         private readonly IUserService _userService;

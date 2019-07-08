@@ -1,5 +1,7 @@
-﻿using Autofac;
+﻿using System.Reflection;
+using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using Autofac.Integration.WebApi;
 using ContractWithWireMock.Services;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -13,6 +15,7 @@ namespace ContractWithWireMock.IoC
         {
             var builder = new ContainerBuilder();
 
+            builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
             builder.RegisterAssemblyTypes(typeof(DecisionService).Assembly).AsImplementedInterfaces();
 
             builder.Populate(services);

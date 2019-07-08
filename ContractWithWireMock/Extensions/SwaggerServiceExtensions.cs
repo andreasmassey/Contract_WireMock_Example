@@ -12,7 +12,8 @@ namespace ContractWithWireMock.Extensions
         {
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1.0", new Info { Title = "Contract API v1.0", Version = "v1.0" });
+                c.SwaggerDoc("v1.0", new Info {Title = "Contract API v1.0", Version = "v1.0"});
+                c.CustomSchemaIds(x => x.FullName);
             });
 
             return services;

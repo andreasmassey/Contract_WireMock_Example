@@ -1,14 +1,14 @@
 ﻿using System;
-using Contracts;
 using ContractWithWireMock.Services;
 using System.Threading.Tasks;
+using Contracts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ContractWithWireMock.Messages;
 
 namespace ContractWithWireMock.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/decision")]
     [ApiController]
     public class DecisionController : Controller
     {
@@ -42,7 +42,7 @@ namespace ContractWithWireMock.Controllers
                 _logger.LogError(ex.ToString());
                 return StatusCode(500, new ErrorResponse(ex).Errors);
             }
-            
+
         }
     }
 }
